@@ -1,10 +1,45 @@
-html {
-  background-image: url(/images/Wiki\ background.png);
+header {
+  background-size: cover;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Layout */
+  display: grid;
+  grid-template-columns: 10rem max-content;
+  grid-column-gap: 2rem;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+
+  padding: 3rem;
+  padding-bottom: 6rem;
+}
+header h1,
+header h2,
+header nav a {
+  color: white;
+}
+
+#worldimage {
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  border-radius: 50%;
 }
 
 body {
+  background-image: url(images/wiki_banner.png);
+  background-attachment: fixed;
   margin: 0px;
 
+}
+
+footer {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 8pt;
+  padding: 2mm 3mm;
 }
 
 .wiki-page {
@@ -15,25 +50,6 @@ body {
   left: 20px;
   right: 20px;
   padding: 10px;
-}
-
-#home-page-header {
-  /* background-color: rgba(0,0,0,0.3); */
-  padding-top: 1cm;
-  padding-bottom: 1cm;
-}
-
-#header-contents {
-  width: 600px;
-  display: block;
-  height: 130px;
-  margin: auto;
-}
-
-#worldimage {
-  float: left;
-  border-radius: 50%;
-  width: 130px;
 }
 
 /* #header-text {} */
@@ -60,13 +76,6 @@ body {
 
 .PC-description {
   text-align: center;
-}
-
-footer {
-  text-align: right;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 /**START OF TODD CODE**/
