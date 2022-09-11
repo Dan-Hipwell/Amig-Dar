@@ -1,0 +1,256 @@
+html {
+  background-image: url(/images/Wiki\ background.png);
+}
+
+body {
+  margin: 0px;
+
+}
+
+.wiki-page {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  left: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+#home-page-header {
+  /* background-color: rgba(0,0,0,0.3); */
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+}
+
+#header-contents {
+  width: 600px;
+  display: block;
+  height: 130px;
+  margin: auto;
+}
+
+#worldimage {
+  float: left;
+  border-radius: 50%;
+  width: 130px;
+}
+
+/* #header-text {} */
+
+#subheading {
+  margin-top: 0rem;
+}
+
+#header-text {
+  padding-left: 170px;
+}
+
+#header-nav-menu {
+  float: inline-end;
+}
+
+.main-nav-menu {
+  margin-left: 2rem;
+}
+
+.maintext {
+  max-width: 500px;
+}
+
+.PC-description {
+  text-align: center;
+}
+
+footer {
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/**START OF TODD CODE**/
+/** Crimson Text **/
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+/** Alegreya **/
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap");
+/** Nova Mono **/
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap");
+
+:root {
+  --offwhite: #fff9e6;
+  --red: #58180d;
+  --green: #e0e5c1;
+  --yellow: #c9ad6a;
+  --grey: #6d6a75;
+  --black: #403333;
+
+  font-size: 3.35mm;
+  font-family: "Alegreya", sans-serif;
+  color: var(--black);
+}
+
+/** Blocks **/
+blockquote {
+  break-inside: avoid;
+  margin: 6mm 0;
+  padding: 4mm;
+
+  background-color: var(--green);
+  border-top: 5px solid var(--red);
+  border-bottom: 5px solid var(--red);
+}
+blockquote > h4,
+blockquote > h3 {
+  margin-block-start: 0.2em;
+}
+
+/** Tables **/
+figure {
+  margin: 0;
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+th {
+  color: white;
+  background-color: var(--red);
+  padding: 0.2rem 0.5rem;
+}
+td {
+  border: none;
+  background: var(--green);
+  padding: 0.5rem;
+}
+
+/** - Breaks - **/
+hr {
+  column-span: all;
+  margin: 5rem auto;
+  /* D&D style arrow */
+  width: 0;
+  height: 0;
+  border-top: 0.25rem solid transparent;
+  border-bottom: 0.25rem solid transparent;
+  border-left: 15cm solid var(--red);
+  border-right: none;
+}
+/** - Headings - **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cm-header {
+  break-after: avoid-column;
+
+  margin: 0;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.2em;
+
+  color: var(--red);
+}
+h1,
+h2,
+h3,
+h4,
+.cm-header1,
+.cm-header2,
+.cm-header3,
+.cm-header4 {
+  font-family: "Crimson Text", serif;
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+h1,
+.cm-header1 {
+  font-size: 3rem;
+}
+
+h2,
+.cm-header2 {
+  font-size: 2rem;
+}
+
+h3,
+.cm-header3 {
+  font-size: 1.5rem;
+}
+
+h4,
+.cm-header4 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--yellow);
+}
+
+h5,
+.cm-header5 {
+  font-size: 1.2rem;
+}
+
+h6,
+.cm-header6 {
+  font-size: 1rem;
+}
+
+/** Font setting **/
+p {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.8em;
+  min-width: 100%;
+}
+
+/** Links **/
+a {
+  color: var(--black);
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: var(--red);
+  text-decoration-color: var(--red);
+}
+a:hover {
+  color: var(--red);
+}
+a:visited {
+  color: var(--yellow);
+}
+a:active {
+  color: var(--red);
+}
+
+/** Other **/
+.md-footnote,
+sup.md-footnote {
+  color: var(--red);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/** Emphasis **/
+del {
+  text-decoration-color: var(--red);
+}
+
+mark {
+  background-color: var(--green);
+}
+::spelling-error {
+  color: var(--red);
+}
+
+img {
+  max-width: 100%;
+}
+/**END OF TODD CODE**/
