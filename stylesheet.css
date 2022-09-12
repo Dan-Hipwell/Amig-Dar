@@ -36,10 +36,11 @@ body {
 
 footer {
   position: relative;
+  text-align: right;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: 8pt;
-  padding: 2mm 3mm;
+  padding: 2rem 3rem;
 }
 
 .wiki-page {

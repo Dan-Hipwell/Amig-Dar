@@ -55,12 +55,6 @@
     margin: 1rem;
   }
 }
-/* Hide background credit if there's no width */
-@media only screen and (max-width: 37cm) {
-  footer {
-    left: -6.1cm;
-  }
-}
 
 /** Headings **/
 
