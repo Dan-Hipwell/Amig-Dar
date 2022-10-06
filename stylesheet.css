@@ -216,31 +216,6 @@ p {
   min-width: 100%;
 }
 
-/** Links **/
-a {
-  color: var(--black);
-  text-decoration: underline;
-  text-decoration-color: var(--yellow);
-}
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: var(--red);
-  text-decoration-color: var(--red);
-}
-a:hover {
-  color: var(--red);
-}
-a:visited {
-  color: var(--yellow);
-}
-a:active {
-  color: var(--red);
-}
-
 /** Other **/
 .md-footnote,
 sup.md-footnote {

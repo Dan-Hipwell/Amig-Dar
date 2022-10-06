@@ -151,9 +151,6 @@ a {
   color: var(--text-color);
   text-decoration-color: var(--yellow);
 }
-a:visited {
-  text-decoration-color: var(--green);
-}
 a:hover {
   color: var(--text-color);
   text-decoration-color: var(--purple);
