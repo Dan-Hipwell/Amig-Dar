@@ -115,6 +115,29 @@ blockquote > h3 {
   margin-block-start: 0.2em;
 }
 
+/** Contents **/
+#contents {
+  max-width: 8cm;
+  background-color: var(--green);
+  border-top: 3pt solid var(--red);
+  border-bottom: 3pt solid var(--red);
+  break-inside: avoid;
+  list-style-position: inside;
+  padding: 1rem 0;
+}
+#contents h4 {
+  margin: 0 1rem;
+}
+#contents li {
+  padding: .5rem 1rem;
+}
+#contents li:hover {
+  background-color: rgba(255, 255, 255, .2)
+}
+#contents a {
+  text-decoration: none;
+}
+
 /** Tables **/
 figure {
   margin: 0;
