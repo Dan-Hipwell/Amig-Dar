@@ -5,7 +5,7 @@ Any header (h1, h2, h3, h4, h5 or h6) is included if it has a value for `.id`, h
 */
 function buildContentsBox(contents) {
     // Do nothing if no page marked as contents
-    if (contents === undefined) {
+    if (!contents) {
       return
     }
   
@@ -69,7 +69,7 @@ function buildContentsBox(contents) {
   
       return item;
     }
-  
+    
     // Create header
     let header = document.createElement("h4");
     header.textContent = "Contents";

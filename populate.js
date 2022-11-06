@@ -72,7 +72,8 @@ function populateAll() {
     // Populate header
     populateHeader(document.getElementById("home-page-header"));
     populateFooter(document.getElementById("home-page-footer"));
-    
+    // Build contents box
+    buildContentsBox(document.getElementById("contents"));
 }
 
 // Bind to window load event
