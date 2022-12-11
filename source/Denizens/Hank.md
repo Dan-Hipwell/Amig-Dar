@@ -1,0 +1,1 @@
+![](../_assets/Denizens/hank.png)

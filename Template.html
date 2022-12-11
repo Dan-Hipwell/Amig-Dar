@@ -1,11 +1,39 @@
 <head>
-    <title>Amig'Dar | Home</title>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
-    <link rel="stylesheet" href="torillic.css" type="text/css" />
-    <script src="populate.js"></script>
+    <meta charset="UTF-16" />
+    <title>Amig'Dar</title>
+    <link rel="stylesheet" href="{{style}}/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="{{style}}/torillic.css" type="text/css" />
+    <script src="{{utils}}/maps.js"></script>
 </head>
+
 <body>
-    <header id="home-page-header"></header>
-    <main class="wiki-page"></main>
-    <footer id="home-page-footer"></footer>
+
+    <header id="home-page-header">
+        <img 
+            src="{{root}}/assets/Amig'Dar Model.png" 
+            id="worldimage" 
+            alt="The world of Amig'Dar"
+        />
+        <h1><a href="{{root}}">The world of Amig'Dar</a></h1>
+        <h3 class=sub><a class=ipa href="http://ipa-reader.xyz/?text=æmɪg dɑ&voice=Brian">æmɪg dɑ</a></h3>
+
+        <nav>
+            <a href="{{root}}/Adventurers">Adventurers</a>
+            <a href="{{root}}/Denizens">Denizens</a>
+            <a href="{{root}}/Lore">Lore</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="wiki-page">
+            {{content}}
+            {{breadcrumbs}}
+        </section>
+    </main>
+
+    <footer id="home-page-footer">
+        Content: <a href="https://github.com/Dan-Hipwell">Dan Hipwell</a></br>
+        Wiki Template: <a href="https://github.com/TEParsons">Todd Parsons</a></br>
+        Background: <a href="https://swordartonline.fandom.com/wiki/Aincrad">Aincrad</a> from Sword Art Online
+    </footer>
 </body>
