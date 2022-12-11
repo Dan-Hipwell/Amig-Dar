@@ -1,0 +1,222 @@
+header {
+  background-size: cover;
+  color: white;
+  /* Layout */
+  display: grid;
+  grid-template-columns: 10rem max-content;
+  grid-column-gap: 2rem;
+  grid-auto-flow: row;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+
+  padding: 3rem;
+  padding-bottom: 6rem;
+}
+header h1,
+header h2,
+header nav a {
+  color: white;
+}
+
+#worldimage {
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  border-radius: 50%;
+  width: 10rem;
+}
+
+.wiki-page {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  left: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+/* #header-text {} */
+
+#subheading {
+  margin-top: 0rem;
+}
+
+#header-text {
+  padding-left: 170px;
+}
+
+#header-nav-menu {
+  float: inline-end;
+}
+
+.main-nav-menu {
+  margin-left: 2rem;
+}
+
+.maintext {
+  max-width: 500px;
+}
+
+.PC-description {
+  text-align: center;
+}
+
+/** START OF TODD CODE **/
+
+body {
+  background: 
+    linear-gradient(0deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0)), 
+    linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), 
+    url("wiki_bg.png");
+  background-size: cover;
+  background-position-y: 10%;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+#home-page-header {
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  padding: 2rem;
+}
+#home-page-header h1,
+#home-page-header h1 a {
+  font-size: 5rem;
+  text-decoration: none;
+}
+#home-page-header * {
+  color: white;
+}
+#home-page-header .ipa {
+  color: var(--yellow);
+}
+
+#home-page-footer {
+  position: fixed;
+  left: 0;
+  bottom: 2rem;
+  width: 15rem;
+  margin-left: -17rem;
+
+  text-align: left;
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.2;
+  color: white;
+
+  transition: opacity 1s, margin-left 1s;
+}
+#home-page-footer * {
+  color: white;
+}
+#home-page-footer:hover {
+  opacity: 1;
+  margin-left: 0;
+}
+#home-page-footer::after {
+  content: "i";
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1cm;
+
+  font-family: var(--head);
+  font-size: 1.5rem;
+}
+
+h1.sub,
+h2.sub, 
+h3.sub, 
+h4.sub, 
+h5.sub, 
+h6.sub {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.ipa {
+  font-family: var(--mono);
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ipa:before, .ipa:after {
+  content: "/";
+  display: inline;
+  font-size: .8em;
+  line-height: 1em;
+}
+
+.suffix {
+  font-size: 1rem;
+}
+
+blockquote > ul, 
+blockquote > ul ul {
+  break-inside: avoid;
+  list-style-position: inside;
+  list-style-type: none;
+}
+blockquote > ul {
+  margin: 0;
+  padding-left: 0;
+}
+blockquote > ul ul {
+  margin-top: .5rem;
+  margin-bottom: -.5rem;
+}
+ul.contents:before {
+  content: "Contents";
+  font-family: var(--head);
+  font-weight: 700;
+  font-variant: small-caps;
+  color: var(--red);
+  font-size: 18pt;
+  margin-block-end: 2pt;
+}
+blockquote > ul li {
+  padding: .5rem;
+}
+blockquote > ul li:hover {
+  background-color: rgba(255, 255, 255, .2)
+}
+blockquote > ul a {
+  text-decoration: none;
+}
+
+hex-grid {
+  column-span: all;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+ul.breadcrumbs {
+  position: absolute;
+  bottom: 1cm;
+  right: 2cm;
+  margin-top: 4rem;
+  opacity: 0.5;
+  list-style-type: none;
+}
+ul.breadcrumbs:hover {
+  opacity: 1;
+}
+ul.breadcrumbs li {
+  display: inline;
+}
+ul.breadcrumbs li:not(:first-child)::before {
+  content: ">";
+  margin: .5rem;
+}
